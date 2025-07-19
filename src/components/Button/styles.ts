@@ -12,7 +12,7 @@ export const StyledButton = styled.button<{variant: ButtonVariant}>`
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    
+    width: fit-content;
     &:hover {
         background-color: ${({variant}) => variant === "secondary" ?  colBlack1 : variant === "outline" ? "transparent" : colBlack1};
         transform: translateY(-2px);
