@@ -9,7 +9,6 @@ import hero4 from "../../assets/images/hero_4.jpeg";
 import profile from "../../assets/images/portrait.jpg";
 import asphalt from "../../assets/images/asphalt_1.jpg";
 import asphalt2 from "../../assets/images/asphalt_2.jpg";
-import { css } from "@emotion/css";
 
 function Home() {
   return (
