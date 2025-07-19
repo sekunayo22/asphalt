@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import { toRem } from "../abstracts/functions";
-import { colBlack1, colGrey1, colGrey10, colGrey3, colLightBlue3, colPrimary1, colWhite, Poppins } from "../abstracts/variables";
+import { colGrey10, colPrimary1, colWhite, Poppins } from "../abstracts/variables";
 
 
 export const normalize = css`:root {

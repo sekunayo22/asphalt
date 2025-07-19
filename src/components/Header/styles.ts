@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { colWhite, colBlack1, Poppins, colPrimary1 } from "../../styles/abstracts/variables";
+import { colWhite } from "../../styles/abstracts/variables";
 
 export const StyledHeader = styled.header`
     display: flex;
