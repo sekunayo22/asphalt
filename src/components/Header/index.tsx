@@ -40,7 +40,7 @@ const Header = () => {
             <Logo>
                 <img src={logo} alt="logoz" />
             </Logo>
-            <CloseButton>
+            <CloseButton type="button" onClick={() => setIsOpen(false)}>
                 <Close />
             </CloseButton>
         </NavModalHeader>
