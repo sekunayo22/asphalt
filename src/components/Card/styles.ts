@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { colBlack, colGrey1, colWhite } from "../../styles/abstracts/variables";
+import { colBlack, colGrey1 } from "../../styles/abstracts/variables";
 
 export const CardContent = styled.div`
   display: flex;
