@@ -56,7 +56,7 @@ export const Description = styled.p`
   color: ${colWhite};
   text-align: center;
   
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     font-size: 30px;
   }
   
@@ -122,6 +122,12 @@ export const Gallery = styled.div`
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 1120px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      height: auto;
+  }
 `
 
 export const PictureFrame = styled.img`
@@ -142,11 +148,33 @@ grid-template-columns: repeat(2, 1fr);
 `
 
 export const About = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 70vh;
   overflow: hidden;
+  padding: 0 32px;
+
+
+  @media (max-width: 1120px) {
+    height: auto;
+    padding: 100px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 480px) {
+    padding: 32px;
+  }
+`
+
+export const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 32px;
+
+  @media (max-width: 1120px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+  }
 `
 
 export const AboutText = styled.div`
@@ -200,6 +228,7 @@ export const AboutProfile = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-top: 24px;
 `
 
 export const AboutProfileImage = styled.img`
@@ -247,6 +276,18 @@ export const Partnership = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 50px 32px 150px 32px;
+  background-color: #F7F7F7;
+
+    @media (max-width: 1120px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      height: auto;
+      padding: 50px 100px;
+  }
+
+    @media (max-width: 480px) {
+    padding: 32px;
+  }
 `
 
 export const PartnershipImageBoxContainer = styled.div`
@@ -254,12 +295,24 @@ export const PartnershipImageBoxContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+
+ 
 `
 
 export const PartnershipFirstImageBox = styled.div`
   width: 400px;
   height: 600px;
   position: relative;
+
+  @media (max-width: 1120px) {
+    width: 500px;
+    height: 700px;
+  }
+
+  @media (max-width: 480px) {
+    width: 300px;
+    height: 400px;
+  }
 `
 
 export const PartnershipSecondImageBox = styled.div`
@@ -268,6 +321,17 @@ export const PartnershipSecondImageBox = styled.div`
   position: absolute;
   bottom: -15%;
   right: -50%;
+
+  @media (max-width: 1120px) {
+    width: 450px;
+    height: 450px;
+  }
+
+  @media (max-width: 480px) {
+    width: 250px;
+    height: 250px;
+    right: -10%;
+  }
 `
 
 export const PartnershipImage = styled.img`
@@ -285,6 +349,16 @@ export const PartnershipTextContainer = styled.div`
   width: 100%;
   height: 100%;
   padding-left: 100px;
+
+  @media (max-width: 1120px) {
+    padding-left: 0;
+    align-items: flex-start;
+    padding-top: 150px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 100px;
+  }
 `
 
 export const PartnershipText = styled.div` 
@@ -321,4 +395,129 @@ export const PartnershipTextHeading = styled.h3`
   margin-bottom: 8px;
   width: 80%;
   line-height: 1.2;
+`
+
+export const CardList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+
+   @media (max-width: 1120px) {
+      grid-template-columns: 1fr;
+  }
+`
+
+export const News = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #F7F7F7;
+
+  @media (max-width: 1120px) {
+    height: auto;
+    padding: 32px 0px;
+  }
+`
+
+export const NewsTitle = styled.h2`
+  font-size: 12px;
+  font-weight: 600;
+  color: ${colBlack};
+  text-align: left;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+`
+
+export const NewsHeading = styled.p`
+  font-size: 50px;
+  font-weight: 900;
+  color: ${colBlack};
+  text-align: center;
+  margin-bottom: 8px;
+  width: 80%;
+  line-height: 1.2;
+`
+
+export const Footer = styled.div`
+  display: flex;
+  height: 70vh;
+  background-color: ${colBlack};
+  padding: 50px 100px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1120px) {
+    height: auto;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`
+
+export const FooterLogo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+`
+
+export const FooterHeading = styled.p`
+  font-size: 24px;
+  font-weight: 400;
+  color: ${colWhite};
+  text-align: left;
+`
+
+export const FooterLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`
+
+export const FooterLinkGroupHeading = styled.p`
+  font-size: 16px;
+  font-weight: 700;
+  color: ${colWhite};
+  text-align: left;
+`
+
+export const FooterLink = styled.p`
+  font-size: 12px;
+  font-weight: 400;
+  color: ${colWhite};
+`
+
+export const FooterLinksContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+  @media (max-width: 1120px) {
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+  }
+`
+
+export const FooterHeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 `
